@@ -4,7 +4,7 @@ FROM dgnest/postgres:9.4
 MAINTAINER DGNEST <@dgnest>
 
 RUN apt-get update \
-    && apt-get -y install postgis
+    && apt-get -y install postgis \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
